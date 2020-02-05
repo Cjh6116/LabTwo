@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0119.2058                               -->
+<workbook original-version='18.1' source-build='2019.4.2 (20194.20.0119.2058)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='StateCollegeWeather-2000-2020' inline='true' name='federated.0zguyjo0x58et512rdfzs1dvty35' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='StateCollegeWeather-2000-2020' name='textscan.1cimvkz0vtpjzv14sr8090fk113l'>
+            <connection class='textscan' directory='/Users/caseyheilig/Downloads' filename='StateCollegeWeather-2000-2020.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1cimvkz0vtpjzv14sr8090fk113l' name='StateCollegeWeather-2000-2020.csv' table='[StateCollegeWeather-2000-2020#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='STATION' ordinal='0' />
+            <column datatype='string' name='NAME' ordinal='1' />
+            <column datatype='date' name='DATE' ordinal='2' />
+            <column datatype='real' name='PRCP' ordinal='3' />
+            <column datatype='real' name='SNOW' ordinal='4' />
+            <column datatype='integer' name='SNWD' ordinal='5' />
+            <column datatype='integer' name='TMAX' ordinal='6' />
+            <column datatype='integer' name='TMIN' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATION]</local-name>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias>STATION</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DATE]</local-name>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias>DATE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRCP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PRCP]</local-name>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias>PRCP</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SNOW</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SNOW]</local-name>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias>SNOW</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SNWD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SNWD]</local-name>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias>SNWD</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TMAX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TMAX]</local-name>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias>TMAX</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TMIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TMIN]</local-name>
+            <parent-name>[StateCollegeWeather-2000-2020.csv]</parent-name>
+            <remote-alias>TMIN</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Prcp' datatype='real' name='[PRCP]' role='measure' type='quantitative' />
+      <column caption='Snow' datatype='real' name='[SNOW]' role='measure' type='quantitative' />
+      <column caption='Snwd' datatype='integer' name='[SNWD]' role='measure' type='quantitative' />
+      <column caption='Station' datatype='string' name='[STATION]' role='dimension' type='nominal' />
+      <column caption='Tmax' datatype='integer' name='[TMAX]' role='measure' type='quantitative' />
+      <column caption='Tmin' datatype='integer' name='[TMIN]' role='measure' type='quantitative' />
+      <column-instance column='[TMAX]' derivation='Avg' name='[avg:TMAX:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TMIN]' derivation='Avg' name='[avg:TMIN:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TMIN]' derivation='CountD' name='[ctd:TMIN:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TMAX]' derivation='Sum' name='[sum:TMAX:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TMIN]' derivation='Sum' name='[sum:TMIN:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/caseyheilig/Documents/Sophmore year/2nd Semester /Visual Analytics/StateCollegeWeather-2000-2020.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/31/2020 02:28:36 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='StateCollegeWeather-2000-2020' increment-value='%null%' refresh-type='create' rows-inserted='7275' timestamp-start='2020-01-31 14:28:36.941' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>STATION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STATION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STATION</remote-alias>
+              <ordinal>0</ordinal>
+              <family>StateCollegeWeather-2000-2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAME</remote-alias>
+              <ordinal>1</ordinal>
+              <family>StateCollegeWeather-2000-2020.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DATE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DATE</remote-alias>
+              <ordinal>2</ordinal>
+              <family>StateCollegeWeather-2000-2020.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>7275</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRCP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PRCP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PRCP</remote-alias>
+              <ordinal>3</ordinal>
+              <family>StateCollegeWeather-2000-2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SNOW</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SNOW]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SNOW</remote-alias>
+              <ordinal>4</ordinal>
+              <family>StateCollegeWeather-2000-2020.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SNWD</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SNWD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SNWD</remote-alias>
+              <ordinal>5</ordinal>
+              <family>StateCollegeWeather-2000-2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TMAX</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TMAX]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TMAX</remote-alias>
+              <ordinal>6</ordinal>
+              <family>StateCollegeWeather-2000-2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>95</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TMIN</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TMIN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TMIN</remote-alias>
+              <ordinal>7</ordinal>
+              <family>StateCollegeWeather-2000-2020.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.45546' measure-ordering='alphabetic' measure-percentage='0.54454' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0zguyjo0x58et512rdfzs1dvty35].[avg:TMIN:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0zguyjo0x58et512rdfzs1dvty35].[ctd:TMIN:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0zguyjo0x58et512rdfzs1dvty35].[sum:TMIN:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0zguyjo0x58et512rdfzs1dvty35].[avg:TMAX:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0zguyjo0x58et512rdfzs1dvty35].[sum:TMAX:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='StateCollegeWeather-2000-2020' name='federated.0zguyjo0x58et512rdfzs1dvty35' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zguyjo0x58et512rdfzs1dvty35'>
+            <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+            <column caption='Snow' datatype='real' name='[SNOW]' role='measure' type='quantitative' />
+            <column caption='Tmax' datatype='integer' name='[TMAX]' role='measure' type='quantitative' />
+            <column caption='Tmin' datatype='integer' name='[TMIN]' role='measure' type='quantitative' />
+            <column-instance column='[TMAX]' derivation='Avg' name='[avg:TMAX:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TMIN]' derivation='Avg' name='[avg:TMIN:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SNOW]' derivation='Sum' name='[sum:SNOW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DATE]' derivation='Year' name='[yr:DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0zguyjo0x58et512rdfzs1dvty35].[:Measure Names]' />
+              <lod column='[federated.0zguyjo0x58et512rdfzs1dvty35].[yr:DATE:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='4.9290008544921875' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0zguyjo0x58et512rdfzs1dvty35].[avg:TMIN:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0zguyjo0x58et512rdfzs1dvty35].[:Measure Names]' />
+              <lod column='[federated.0zguyjo0x58et512rdfzs1dvty35].[yr:DATE:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.0434806346893311' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0zguyjo0x58et512rdfzs1dvty35].[avg:TMAX:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0zguyjo0x58et512rdfzs1dvty35].[:Measure Names]' />
+              <lod column='[federated.0zguyjo0x58et512rdfzs1dvty35].[yr:DATE:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0zguyjo0x58et512rdfzs1dvty35].[avg:TMIN:qk] + [federated.0zguyjo0x58et512rdfzs1dvty35].[avg:TMAX:qk])</rows>
+        <cols>[federated.0zguyjo0x58et512rdfzs1dvty35].[sum:SNOW:qk]</cols>
+      </table>
+      <simple-id uuid='{7372FF0D-CE56-43BD-8ECB-2C96A44F1E48}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight field='[federated.0zguyjo0x58et512rdfzs1dvty35].[:Measure Names]'>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{00FFF863-B61F-4F33-A127-DB8DC61B0980}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
